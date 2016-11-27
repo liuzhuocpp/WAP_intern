@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+<!-- 		测试数据库，大家都连向同一台数据库 -->
+<!--         <property name="connection.url"> jdbc:mysql://192.168.2.216:3306/duomeiti?autoReconnect=true&amp;autoReconnectForPools=true&amp;useUnicode=true&amp;characterEncoding=utf8</property> -->
+        
+<!-- 		部署的服务器使用本地数据库 -->     
+        
+        <property name="connection.url"> jdbc:mysql://localhost:3306/duomeiti?autoReconnect=true&amp;autoReconnectForPools=true&amp;useUnicode=true&amp;characterEncoding=utf8</property>
+	
+	
+	
+	
+	
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+<!--         <property name="format_sql">true</property> -->
+        
+<!--         <property name="connection.autocommit">true</property> -->
+
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+<!--         <property name="hbm2ddl.auto">create-drop</property> -->
+		<property name="hbm2ddl.auto">update</property>
+		<property name="hibernate.current_session_context_class">thread</property>
+		
+<!-- 		<property name="connection.autoReconnect">true</property> -->
+<!--         <property name="connection.autoReconnectForPools">true</property>  -->
+<!--         <property name="connection.is-connection-validation-required">true</property>  -->
+<!--         <property name="connection.failOverReadOnly">false</property> -->
+		
+<!--         <mapping resource="model/UserModel.hbm.xml"/> -->
+		<mapping class="model.User"/>
+		<mapping class="model.StudentProfile"/>
+		<mapping class="model.AdminProfile"/>
+		<mapping class="model.Classroom"/>
+<!-- 		<mapping class="model.Contacts"/> -->
+		<mapping class="model.Commonproblem"/>
+		<mapping class="model.Repertory"/>
+		
+		<mapping class="model.Training"/>
+		<mapping class="model.ExamTitle"/>
+		<mapping class="model.ExamOption"/>
+		<mapping class="model.ExamStuOption"/>
+		<mapping class="model.ExamStuScore"/>
+		
+		<mapping class="model.TeachBuilding"/>
+		<mapping class="model.RepairRecord"/>
+		<mapping class="model.CheckRecord"/>
+<!-- 		<mapping class="model.Message"/> -->
+<!-- 		<mapping class="model.EgFilePathSave"/> -->
+		<mapping class="model.Notice"/>
+		<mapping class="model.RoomPicture"/>	
+
+		<mapping class="model.Rules"/>
+		<mapping class="model.ResourceFilePath"/>		
+		<mapping class="model.CheckInRecord"/>
+		
+		
+		<mapping class="model.DutyPiece"/>
+		<mapping class="model.DutySchedule"/>
+		<mapping class="model.DutyPlace"/>
+		<mapping class="model.DutyChooseSwitch"/>
+		
+		<mapping class="model.DeviceStatusHistory"/>
+		
+		<mapping class="model.EmergencyInfo"/>
+		<mapping class="model.EmergencyInfoRead"/>
+		
+		<mapping class="model.SemesterFirstWeek"/>
+		
+		
+<!-- 		<mapping class="model.ChooseClassSwitch"/> -->
+		
+		
+    </session-factory>
+</hibernate-configuration>

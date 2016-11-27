@@ -1,0 +1,30 @@
+.buildingSelect{
+	width:100px;
+	display:inline-block!important;
+}
+
+td{
+	text-align:center;
+}
+
+.adjust-btn{
+	float:right;
+	margin-right:30px;
+}
+
+td span{
+	display:block;
+	text-align:center;
+	background-color:#ddd;
+	margin:2px 0;
+	cursor:pointer;
+	min-height:27px;
+	line-height:27px;
+}
+
+#studentId{
+	width:200px;
+}
+#studentName{
+	width:200px;
+}
