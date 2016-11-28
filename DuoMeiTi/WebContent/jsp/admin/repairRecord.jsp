@@ -5,14 +5,15 @@
 <div class="mycontent">
 
 <div class="alert alert-success" role="alert">
+	<strong>
 	The white cell means a commodity's real position, and the yellow cell means a commodity's recommended position.
-
+	</strong>
 </div>
 
 
 <button class="btn btn-primary" id="setButton"> Set </button>
-<button class="btn btn-primary" id="openResetButon"> Open Reset </button>
-<button class="btn btn-primary" id="closeResetButon"> Close Reset </button>
+<button class="btn btn-primary" id="openResetButon"> Open Recommend </button>
+<button class="btn btn-primary" id="closeResetButon"> Close Recommend </button>
 
 <s:iterator   var="i" begin="0" end="1">
 	
@@ -23,7 +24,6 @@
 				<s:property value="@util.Util@getRegion(#i * 2 + #region)"/>
 			</th>
 		</s:iterator>
-			
 	</tr>
 	
 	<tr class="warning"  >
@@ -58,17 +58,6 @@
 						</s:else>
 					/>
 				<s:property value="commodityPosition.get(#pid).name"/>
-<%-- 				<s:property value="#pid"/> --%>
-				
-<%-- 				<s:if test="commodityPosition.get(#pid).status == @model.CommodityStatus@IN_SHELF"> --%>
-<%-- 					<s:property value="commodityPosition.get(#pid).name"/> --%>
-<%-- 				</s:if> --%>
-<%-- 				<s:else> --%>
-<%-- 					<input class="form-control" value="<s:property value="commodityPosition.get(#pid).id"/>" --%>
-<!-- 						style="background-color:red;" -->
-<!-- 					/> -->
-<%-- 				</s:else> --%>
-										
 				
 				
 				
