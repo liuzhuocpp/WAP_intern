@@ -10,12 +10,9 @@ import model.Commodity;
 import model.CommodityStatus;
 import com.opensymphony.xwork2.ActionSupport;
 
- 
-
- 
-
-public class RepairRecordAction extends ActionSupport {
+public class CommodityPositionManagementAction extends ActionSupport {
 	
+	private static final long serialVersionUID = 1L;
 	private static List<Commodity> commodityData = new ArrayList<Commodity>();
 	static
 	{
@@ -74,18 +71,6 @@ public class RepairRecordAction extends ActionSupport {
 		return ActionSupport.SUCCESS;
 	}
 
-
-
-
-	public List<Commodity> getCommodityPosition() {
-		return commodityPosition;
-	}
-
-
-	public void setCommodityPosition(List<Commodity> commodityPosition) {
-		this.commodityPosition = commodityPosition;
-	}
-	
 	private String commodityIdArrayString;
 	public String set() throws Exception
 	{
@@ -110,16 +95,28 @@ public class RepairRecordAction extends ActionSupport {
 		return SUCCESS;
 		
 	}
+	
 	public static List<Commodity> getCommodityData() {
 		return commodityData;
 	}
+	
 	public static void setCommodityData(List<Commodity> commodityData) {
-		RepairRecordAction.commodityData = commodityData;
+		CommodityPositionManagementAction.commodityData = commodityData;
 	}
+	
 	public String getCommodityIdArrayString() {
 		return commodityIdArrayString;
 	}
+	
 	public void setCommodityIdArrayString(String commodityIdArrayString) {
 		this.commodityIdArrayString = commodityIdArrayString;
+	}
+	
+	public List<Commodity> getCommodityPosition() {
+		return commodityPosition;
+	}
+	
+	public void setCommodityPosition(List<Commodity> commodityPosition) {
+		this.commodityPosition = commodityPosition;
 	}
 }

@@ -8,48 +8,22 @@ import java.util.List;
 import java.util.Scanner;
  
 import model.Commodity;
-//import util.Const;
 
 public class CommodityManagementAction extends util.FileUploadBaseAction{
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private List<Commodity> commodity_list;
-// 	private List<T_Repertory> rtSearch_list = new ArrayList<T_Repertory>();
-	
-	private String repertory_table;
- 	
-	
-	
-	List deviceStatusHistoryList;
-	
-	String deviceStatusHistoryTable;
-	
-	public static java.sql.Timestamp addDays(java.util.Date d, int day)
-	{
-		return new java.sql.Timestamp(d.getTime() + day * 24*60 *60*1000);
-	}
 
- 
-	
-	
-	
 	private static List<Commodity> commodityData;
 	// Generate fake data
 	static 
 	{
 		commodityData = new ArrayList<Commodity>();
 		commodityData.add(new Commodity(1, "Wipes", "Huggies Natural Care Plus Wipes",24.99	,"USD") );
-				
 	}
 	
 	
-	
-	
 	public String execute() throws Exception{
-		commodity_list = commodityData;
-				
+		commodity_list = commodityData;				
 		return SUCCESS;
 	}
 	
@@ -61,8 +35,6 @@ public class CommodityManagementAction extends util.FileUploadBaseAction{
 		{
 			return SUCCESS;
 		}
-		
-
 		InputStream stream = new FileInputStream (this.file);
 		Scanner scan = new Scanner(stream);
 		scan.nextLine();
@@ -93,69 +65,6 @@ public class CommodityManagementAction extends util.FileUploadBaseAction{
 	}
 
 
-//	public List<T_Repertory> getRtSearch_list() {
-//		return rtSearch_list;
-//	}
-//
-//	public void setRtSearch_list(List<T_Repertory> rtSearch_list) {
-//		this.rtSearch_list = rtSearch_list;
-//	}
-
-	public String getRepertory_table() {
-		return repertory_table;
-	}
-
-	public void setRepertory_table(String repertory_table) {
-		this.repertory_table = repertory_table;
-	}
-
-//	public String[] getDevice() {
-//		return device;
-//	}
-//
-//	public void setDevice(String[] device) {
-//		this.device = device;
-//	}
-//
-//	public String[] getMainDevice() {
-//		return mainDevice;
-//	}
-//
-//	public void setMainDevice(String[] mainDevice) {
-//		this.mainDevice = mainDevice;
-//	}
-//
-//	public String[] getCostDevice() {
-//		return costDevice;
-//	}
-//
-//	public void setCostDevice(String[] costDevice) {
-//		this.costDevice = costDevice;
-//	}
-//
-//	public String[] getDeviceStatus() {
-//		return deviceStatus;
-//	}
-//
-//	public void setDeviceStatus(String[] deviceStatus) {
-//		this.deviceStatus = deviceStatus;
-//	}
-
-	public List getDeviceStatusHistoryList() {
-		return deviceStatusHistoryList;
-	}
-
-	public void setDeviceStatusHistoryList(List deviceStatusHistoryList) {
-		this.deviceStatusHistoryList = deviceStatusHistoryList;
-	}
-
-	public String getDeviceStatusHistoryTable() {
-		return deviceStatusHistoryTable;
-	}
-
-	public void setDeviceStatusHistoryTable(String deviceStatusHistoryTable) {
-		this.deviceStatusHistoryTable = deviceStatusHistoryTable;
-	}
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;

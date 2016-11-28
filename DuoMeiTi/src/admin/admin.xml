@@ -14,13 +14,13 @@
 
 
 <!-- 维修记录管理 -->
-		<action name="repairRecord" class="admin.RepairRecordAction">
+		<action name="repairRecord" class="admin.CommodityPositionManagementAction">
 			<result>
 				/jsp/admin/repairRecord.jsp
 			</result>			
 		</action>
 		
-		<action name="repairRecord_*" class="admin.RepairRecordAction" method="{1}">
+		<action name="repairRecord_*" class="admin.CommodityPositionManagementAction" method="{1}">
 			
 			<result name="success" type="json">
 			</result>			
@@ -35,7 +35,6 @@
 		
 		<action name="repertory_*" class="admin.CommodityManagementAction" method="{1}">
 			<result name="success" type="json">
-
 			</result>
 		</action>
 		 
