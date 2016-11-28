@@ -1,41 +1,14 @@
 package admin;
 
-import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.io.OutputStream;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import org.apache.struts2.ServletActionContext;
-import org.hibernate.Criteria;
-//import org.hibernate.FetchMode;
-import org.hibernate.Session;
-import org.hibernate.criterion.Order;
-import org.hibernate.criterion.Restrictions;
-
-import com.opensymphony.xwork2.ActionContext;
-import com.opensymphony.xwork2.ActionSupport;
-
-//import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.*;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.apache.poi.hssf.usermodel.HSSFCell;
-import org.apache.poi.hssf.usermodel.HSSFRichTextString;
-import org.apache.poi.hssf.usermodel.HSSFRow;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-
+ 
 import model.Commodity;
-import util.Const;
+//import util.Const;
 
 public class RepertoryAction extends util.FileUploadBaseAction{
 	/**
@@ -67,10 +40,10 @@ public class RepertoryAction extends util.FileUploadBaseAction{
 	private String repertory_table;
 	
 	//tag select func
-	private String device[];
-	private String mainDevice[];
-	private String costDevice[];
-	private String deviceStatus[];
+//	private String device[];
+//	private String mainDevice[];
+//	private String costDevice[];
+//	private String deviceStatus[];
 
 	
 	
@@ -104,16 +77,16 @@ public class RepertoryAction extends util.FileUploadBaseAction{
 	
 	public String execute() throws Exception{
 		
-		device = Const.device;
-		mainDevice = Const.mainDevice;
-		costDevice = Const.costDevice;
-		
-		deviceStatus = new String[5];
-		deviceStatus[0] = Const.deviceStatus[0];
-		deviceStatus[1] = Const.deviceStatus[1];
-		deviceStatus[2] = Const.deviceStatus[3];
-		deviceStatus[3] = Const.deviceStatus[4];
-		deviceStatus[4] = Const.deviceStatus[2];
+//		device = Const.device;
+//		mainDevice = Const.mainDevice;
+//		costDevice = Const.costDevice;
+//		
+//		deviceStatus = new String[5];
+//		deviceStatus[0] = Const.deviceStatus[0];
+//		deviceStatus[1] = Const.deviceStatus[1];
+//		deviceStatus[2] = Const.deviceStatus[3];
+//		deviceStatus[3] = Const.deviceStatus[4];
+//		deviceStatus[4] = Const.deviceStatus[2];
 		commodity_list = repertoryData;
 				
 		return SUCCESS;
@@ -330,37 +303,37 @@ public class RepertoryAction extends util.FileUploadBaseAction{
 		this.repertory_table = repertory_table;
 	}
 
-	public String[] getDevice() {
-		return device;
-	}
-
-	public void setDevice(String[] device) {
-		this.device = device;
-	}
-
-	public String[] getMainDevice() {
-		return mainDevice;
-	}
-
-	public void setMainDevice(String[] mainDevice) {
-		this.mainDevice = mainDevice;
-	}
-
-	public String[] getCostDevice() {
-		return costDevice;
-	}
-
-	public void setCostDevice(String[] costDevice) {
-		this.costDevice = costDevice;
-	}
-
-	public String[] getDeviceStatus() {
-		return deviceStatus;
-	}
-
-	public void setDeviceStatus(String[] deviceStatus) {
-		this.deviceStatus = deviceStatus;
-	}
+//	public String[] getDevice() {
+//		return device;
+//	}
+//
+//	public void setDevice(String[] device) {
+//		this.device = device;
+//	}
+//
+//	public String[] getMainDevice() {
+//		return mainDevice;
+//	}
+//
+//	public void setMainDevice(String[] mainDevice) {
+//		this.mainDevice = mainDevice;
+//	}
+//
+//	public String[] getCostDevice() {
+//		return costDevice;
+//	}
+//
+//	public void setCostDevice(String[] costDevice) {
+//		this.costDevice = costDevice;
+//	}
+//
+//	public String[] getDeviceStatus() {
+//		return deviceStatus;
+//	}
+//
+//	public void setDeviceStatus(String[] deviceStatus) {
+//		this.deviceStatus = deviceStatus;
+//	}
 
 	public List getDeviceStatusHistoryList() {
 		return deviceStatusHistoryList;
