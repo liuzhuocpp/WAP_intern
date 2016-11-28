@@ -31,8 +31,6 @@ public class Util
  		return array[regionId];
  	}
  	
-	
-	
 	public static final String RootPath;
 	
 	static 
@@ -40,10 +38,6 @@ public class Util
 		ServletContext application = ServletActionContext.getServletContext();
 		RootPath = application.getRealPath("");
 	}
-	
-	
-	
-	
 	
 	public static List<String> splitCSVFormatRow(String row)
 	{
@@ -75,18 +69,8 @@ public class Util
 				isIn ^= true;
 			}
 			else cnt += row.charAt(i);
-		}
-		
+		}		
 		array.add(cnt);
 		return array;
-
-	}
-	
-	
-	
-	
-	
-	
-	
-
+	}	
 }

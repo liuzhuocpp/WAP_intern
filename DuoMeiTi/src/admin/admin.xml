@@ -4,8 +4,6 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-
-
 	<package name="admin" namespace="/admin" extends="AdminDefault">	
 		
 		<action name="" >
@@ -45,43 +43,5 @@
 	</package>
 	
 	
- 
-	
-
-
-
-	
-	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-    
-    
 </struts>
-
-
-
-
-
-
-
-
 
