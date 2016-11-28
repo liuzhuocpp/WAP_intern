@@ -35,9 +35,12 @@
     </package>
     
       
- 	
+
 	
-	<package name="AdminDefault" extends="Default ">
+	
+	
+	
+	<package name="AdminDefault" extends="Default">
 	</package>
 	
 	<package name="StudentDefault" extends="Default">
@@ -56,52 +59,14 @@
 	
 	
 	
-
-	<package name="newClassroom" extends="Default">
-		
-		<action name="classroomManageNew" class="common.ClassroomManageAction" method="classroomList">
-			<result>
-<!-- 				<param name="location">/jsp/admin/classroomManage.jsp</param> -->
-				<param name="location">${classroomManageJsp}</param>
-			</result>
-		</action>
-		<action name="classroomManageNew_*" class="common.ClassroomManageAction" method="{1}">
-			<result type="json">
-			</result>
-		</action>		
-	</package>
-	
-	
-<!-- 	教室信息管理 json NEW -->
-	<package name="classroomInfomationNew" namespace="/common/classroomInfomationNew" extends="Default">
-		<action name="*" class="common.ClassroomInformationAction" method="{1}">
-			<result type="json"> </result>
-		</action>		
-	</package>
-<!-- 	教室信息里管理 NEW END-->	
+ 
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	<package name="emergencyPublish"  namespace="/"  extends="Default">
-		<action name="emergencyPublish_*" class="common.EmergencyPublishAction" method="{1}">
-			<result type="json">
-			</result>
-		</action>
-	</package>
-	
+	 
 	
     
     <include file="/admin/admin.xml"/>	
     <include file="/homepage/homepage.xml"/>
-    <include file="/student/student.xml"/>
-<!--     <include file="/Message/message.xml"/> -->
-<!-- 	<include file="/checkin/checkin.xml"/> -->
-    <!-- Add packages here -->
-
+ 
 </struts>

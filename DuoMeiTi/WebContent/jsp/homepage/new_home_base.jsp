@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="renderer" content="webkit">
-    <title>多媒体管理系统</title>
+    <title>Supermarket management system</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <meta name="description" content="">
@@ -16,8 +16,10 @@
     <meta name="author" content="">
     <!-- CSS Config. -->
 
+    
+ <!-- Le styles -->
  
-        <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+         <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />		
 		<link href="/datepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
         <script type='text/javascript' src="/js/base/jquery-2.1.4.min.js"></script>
@@ -34,19 +36,79 @@
 
 
 <body>
+<!--   <a href="/"> -->
+<!--   	<div style="height:80px"></div> -->
+<!--   </a> -->
+    
+    <div class="container" id="nav-container">
+	       
+	       
+       <!--head content-->
+       <div class="masthead">
+	         <!--Head title-->
+<!-- 	         <a href="/"> -->
+<!-- 	         	<img id="headerpic"   src="/img/head_pic.jpg" style="width:100%;height:230px;"> -->
+<!-- 				</img> -->
+<!-- 	         </a> -->
+			        
+			   <div class="container">
+			     <nav class="navbar navbar-default" role="navigation">
+			       <div class="collapse navbar-collapse">
+			         <ul class="nav navbar-nav">
+			           <li class=""><a href="/">首页</a></li>
+
+
+			           <li class="">
+			           		<a href="/login">登录</a>
+					   </li>
+   			           <li class="">
+			           		<a href="/login">注册</a>
+					   </li>
+			           
+			           
+			           
+			           
+			         </ul>
+			       </div>
+			     </nav>
+			   </div><!--end navbar-->
+   
+       </div><!--end mashhead-->
+    </div><!--end whole container-->
+    
+    
 
 
 <div class="container home-content-container">
      
 				
-	<layout:block name="main_content">
-	</layout:block>
-				
-				
-				
-
-</div>
+				<layout:block name="main_content">
+				</layout:block>
+   </div>
    
+<!--  <div id="footer-links"> -->
+<!--      useful links -->
+<!-- 		<br> -->
+<!-- 		<p class="item-title-white">友情链接</p> -->
+<!-- 		<hr class="head-hr"> -->
+<!-- 		<div class="row-fluid" id="home-linker"> -->
+<!-- 		  <div class="col-lg-3"> -->
+<!-- 		    <a href="http://www.dlut.edu.cn/">大连理工大学</a> -->
+<!-- 		  </div> -->
+<!-- 		</div> -->
+
+<!-- 	</div> -->
+   
+   
+
+    
+    
+    <!-- FOOTER -->
+<footer class="container">
+<!--   <p>Copyright © 1986 - 2016 All rights reserved | | GPLv3 <a href="http://gplv3.fsf.org/">Terms</a></p> -->
+</footer>
+
+<!--End FOOTER-->
 
 
     
@@ -71,19 +133,4 @@
 <script type="text/javascript" src="/new_homepage/js/features.js"></script>
    
     
-    
-    
-    <!-- 百度推广JS -->
-    <script type="text/javascript">
-// 		  var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-// 		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F467a2b45543928de4d32a9f7c3bfc175' type='text/javascript'%3E%3C/script%3E"));
-	</script>
-	
-<!--     <script src=" http://hm.baidu.com/h.js?467a2b45543928de4d32a9f7c3bfc175" type="text/javascript"></script> -->
-<!--     <a href="http://tongji.baidu.com/hm-web/welcome/ico?s=467a2b45543928de4d32a9f7c3bfc175" target="_blank"> -->
-<!--     <img border="0" src="http://eiv.baidu.com/hmt/icon/21.gif" width="20" height="20"> -->
-<!--     </a> -->
-    <!-- 百度推广JS END -->
-  
-
 </body></html>
