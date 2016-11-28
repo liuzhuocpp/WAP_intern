@@ -7,16 +7,13 @@ package util;
 public class Util
 {
  	public static int calculatePostionId(int regionRow, int regionColumn, int shelf, int row, int column)
-	{
-		
-		int ans = regionRow;
-		
+	{		
+		int ans = regionRow;		
 		ans = ans * 2 + regionColumn;
 		ans = ans * 2 + shelf;
 		ans = ans * 2 + row;
 		ans = ans * 4 + column;
-		return ans;
-		
+		return ans;	
 	}
 	
  	public static String getRegion(int regionId)
@@ -35,24 +32,11 @@ public class Util
 	
 	public static final String RootPath;
 	
-
-	
-
-	
-	
 	static 
 	{	
 		ServletContext application = ServletActionContext.getServletContext();
 		RootPath = application.getRealPath("");
 	}
-
-			
-	
-	
-	
-	
-	
-	
 	
 	
 	
