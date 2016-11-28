@@ -37,7 +37,32 @@
 		      </div>						      
 		      <div class="news-list">
 		        <div class="news-documents documents-list "> 
-		        
+		        		
+		        		<div class="usoft-listview-basic">
+							<ul>
+							   <li>
+							      <span class="usoft-listview-item-date">
+							      </span>
+							      <span>
+							       		Coca-Cola has two days to expire
+							      </span>
+							    </li>
+							  </ul>	
+						</div>
+						
+						<div class="usoft-listview-basic">
+							<ul>
+							   <li>
+							      <span class="usoft-listview-item-date">
+							      </span>
+							      <span>
+							       		Apple has three days to expire
+							      </span>
+							    </li>
+							  </ul>	
+						</div>
+		        		
+		        		
 <%-- 		        	<%@ include file = "/jsp/homepage/widgets/more_equipment_replacementTable.jsp" %> --%>
 		        
 		        </div><!--end news-documents-->
