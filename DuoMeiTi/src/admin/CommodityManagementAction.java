@@ -28,7 +28,7 @@ public class CommodityManagementAction extends util.FileUploadBaseAction{
 	}
 	
 
-	public String importExcel() throws Exception 
+	public String importFile() throws Exception 
 	{
 		System.out.println("batch import");
 		if(this.file == null)

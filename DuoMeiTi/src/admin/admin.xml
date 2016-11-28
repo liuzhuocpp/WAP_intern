@@ -8,32 +8,30 @@
 		
 		<action name="" >
 			<result name="success" type="redirect">
-				/admin/classroom/teachBuildingAction 
+				/admin/commodity 
 			</result>
 		</action>
 
 
-<!-- 维修记录管理 -->
-		<action name="repairRecord" class="admin.CommodityPositionManagementAction">
+ 		<action name="commodityPosition" class="admin.CommodityPositionManagementAction">
 			<result>
 				/jsp/admin/repairRecord.jsp
 			</result>			
 		</action>
 		
-		<action name="repairRecord_*" class="admin.CommodityPositionManagementAction" method="{1}">
+		<action name="commodityPosition_*" class="admin.CommodityPositionManagementAction" method="{1}">
 			
 			<result name="success" type="json">
 			</result>			
 		</action>
 		
-<!-- 维修记录管理 END--> 
-		<action name="repertory" class="admin.CommodityManagementAction">
+ 		<action name="commodity" class="admin.CommodityManagementAction">
 			<result name="success">
 				/jsp/admin/repertory.jsp
 			</result>
 		</action>
 		
-		<action name="repertory_*" class="admin.CommodityManagementAction" method="{1}">
+		<action name="commodity_*" class="admin.CommodityManagementAction" method="{1}">
 			<result name="success" type="json">
 			</result>
 		</action>

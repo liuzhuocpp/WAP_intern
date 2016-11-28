@@ -124,11 +124,8 @@
 			commodityIdArrayString += commodityId;			
 			
 		}
-// 		alert(commodityIdArrayString);
-		
-
 		$.ajax({  
-	        url:'/admin/repairRecord_set' ,  
+	        url:'/admin/commodityPosition_set' ,  
 	        type: "POST",  
 	        data: {
 	        	"commodityIdArrayString":commodityIdArrayString,

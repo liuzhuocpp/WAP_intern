@@ -13,7 +13,7 @@
 	    <label for="password">Password</label>
 	    <input style="width:30%" type="password" class="form-control" name="password" value="<s:property value="password"/>" >
 	  </div>
-	  <a type="submit" class="btn btn-default" href="/admin/repertory">Login</a>
+	  <a type="submit" class="btn btn-default" href="/admin/commodity">Login</a>
 	</form>
 	
 	
