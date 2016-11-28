@@ -1,6 +1,9 @@
 package util;
 
- import javax.servlet.ServletContext;
+ import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletContext;
  
  import org.apache.struts2.ServletActionContext;
  
@@ -42,7 +45,42 @@ public class Util
 	
 	
 	
-	
+	public static List<String> splitCSVFormatRow(String row)
+	{
+		List<String> array = new ArrayList<String>();
+		String cnt="";
+		boolean isIn = false;
+		for(int i = 0; i < row.length(); ++ i)
+		{
+			if(row.charAt(i) == ',')
+			{
+				if(!isIn)
+				{
+					array.add(cnt);
+					cnt="";
+				}
+				else 
+				{
+					cnt += ",";
+				}
+				
+			}
+			else if(row.charAt(i) == '\"')
+			{					
+				if(!isIn)
+				{
+					cnt="";
+				}
+				
+				isIn ^= true;
+			}
+			else cnt += row.charAt(i);
+		}
+		
+		array.add(cnt);
+		return array;
+
+	}
 	
 	
 	
