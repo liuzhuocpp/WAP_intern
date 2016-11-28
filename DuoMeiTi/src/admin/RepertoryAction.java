@@ -34,12 +34,6 @@ import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
-
-import dto.T_Repertory;
-import model.Classroom;
-import model.RepairRecord;
-//import jxl.Sheet;
-//import jxl.Workbook;
 import model.Commodity;
 import util.Const;
 
@@ -68,12 +62,7 @@ public class RepertoryAction extends util.FileUploadBaseAction{
 	
 	private String status;
 	private List<Commodity> commodity_list;
-	//search tag's name
-//	private String sDevice;
-//	private String sMainDevice;
-//	private String sCostDevice;
-//	private String sDeviceStatus;
-	private List<T_Repertory> rtSearch_list = new ArrayList<T_Repertory>();
+// 	private List<T_Repertory> rtSearch_list = new ArrayList<T_Repertory>();
 	
 	private String repertory_table;
 	
@@ -96,35 +85,35 @@ public class RepertoryAction extends util.FileUploadBaseAction{
 	}
 
 	// 按照成员字段构建一个Repertory 对象
-	Commodity makeRepertory()
-	{
-		Commodity r = new Commodity();
-		r.rtId = rtId;
-		r.rtType = rtType;
-		r.rtNumber = rtNumber;
-		r.rtVersion = rtVersion;
-		r.rtFactorynum = rtFactorynum;
-
-		
-		if(rtProdDate != null)
-		r.rtProdDate = new java.sql.Timestamp(rtProdDate.getTime());
-		
-		if(rtApprDate != null)
-		r.rtApprDate = new java.sql.Timestamp(rtApprDate.getTime());
-		
-		
-		r.rtReplacePeriod = rtReplacePeriod;		
-		r.rtDeadlineDate = addDays(new java.util.Date() , rtReplacePeriod);
-		
-		r.rtFilterCleanPeriod = rtFilterCleanPeriod;		
-		r.rtFreqPoint = rtFreqPoint;
-
-
-		// 新的设备状态一定不会是 ‘教室’状态，所以设置rtClassroom字段为null
-		r.rtDeviceStatus = rtDeviceStatus;
-		r.rtClassroom = null;
-		return r;
-	}
+//	Commodity makeRepertory()
+//	{
+//		Commodity r = new Commodity();
+//		r.rtId = rtId;
+//		r.rtType = rtType;
+//		r.rtNumber = rtNumber;
+//		r.rtVersion = rtVersion;
+//		r.rtFactorynum = rtFactorynum;
+//
+//		
+//		if(rtProdDate != null)
+//		r.rtProdDate = new java.sql.Timestamp(rtProdDate.getTime());
+//		
+//		if(rtApprDate != null)
+//		r.rtApprDate = new java.sql.Timestamp(rtApprDate.getTime());
+//		
+//		
+//		r.rtReplacePeriod = rtReplacePeriod;		
+//		r.rtDeadlineDate = addDays(new java.util.Date() , rtReplacePeriod);
+//		
+//		r.rtFilterCleanPeriod = rtFilterCleanPeriod;		
+//		r.rtFreqPoint = rtFreqPoint;
+//
+//
+//		// 新的设备状态一定不会是 ‘教室’状态，所以设置rtClassroom字段为null
+//		r.rtDeviceStatus = rtDeviceStatus;
+//		r.rtClassroom = null;
+//		return r;
+//	}
 	
 
 	
@@ -356,13 +345,13 @@ public class RepertoryAction extends util.FileUploadBaseAction{
 	}
 
 
-	public List<T_Repertory> getRtSearch_list() {
-		return rtSearch_list;
-	}
-
-	public void setRtSearch_list(List<T_Repertory> rtSearch_list) {
-		this.rtSearch_list = rtSearch_list;
-	}
+//	public List<T_Repertory> getRtSearch_list() {
+//		return rtSearch_list;
+//	}
+//
+//	public void setRtSearch_list(List<T_Repertory> rtSearch_list) {
+//		this.rtSearch_list = rtSearch_list;
+//	}
 
 	public String getRepertory_table() {
 		return repertory_table;
@@ -432,21 +421,21 @@ public class RepertoryAction extends util.FileUploadBaseAction{
 		this.selectDeviceType = selectDeviceType;
 	}
 
-	public String getSelectDeviceStatus() {
-		return selectDeviceStatus;
-	}
-
-	public void setSelectDeviceStatus(String selectDeviceStatus) {
-		this.selectDeviceStatus = selectDeviceStatus;
-	}
-
-	public String getExportExcelPath() {
-		return exportExcelPath;
-	}
-
-	public void setExportExcelPath(String exportExcelPath) {
-		this.exportExcelPath = exportExcelPath;
-	}
+//	public String getSelectDeviceStatus() {
+//		return selectDeviceStatus;
+//	}
+//
+//	public void setSelectDeviceStatus(String selectDeviceStatus) {
+//		this.selectDeviceStatus = selectDeviceStatus;
+//	}
+//
+//	public String getExportExcelPath() {
+//		return exportExcelPath;
+//	}
+//
+//	public void setExportExcelPath(String exportExcelPath) {
+//		this.exportExcelPath = exportExcelPath;
+//	}
 
 	public List<Commodity> getCommodity_list() {
 		return commodity_list;

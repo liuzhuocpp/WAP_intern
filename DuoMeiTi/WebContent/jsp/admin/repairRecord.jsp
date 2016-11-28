@@ -4,12 +4,24 @@
 <layout:override name="main_content">
 <div class="mycontent">
 
+<div class="alert alert-success" role="alert">
+	The white cell means a commodity's real position, and the yellow cell means a commodity's recommended position.
+
+</div>
+
+
+<button class="btn btn-primary" id="setButton"> Set </button>
+<button class="btn btn-primary" id="openResetButon"> Open Reset </button>
+<button class="btn btn-primary" id="closeResetButon"> Close Reset </button>
+
 <s:iterator   var="i" begin="0" end="1">
 	
 	<table class="table table-bordered table-hover" id="repairRecordTable">
 	<tr class="active">
 		<s:iterator  var="region" begin="0" end="1">
-			<th>日用品区</th>
+			<th>
+				<s:property value="@util.Util@getRegion(#i * 2 + #region)"/>
+			</th>
 		</s:iterator>
 			
 	</tr>
@@ -46,6 +58,7 @@
 						</s:else>
 					/>
 				<s:property value="commodityPosition.get(#pid).name"/>
+<%-- 				<s:property value="#pid"/> --%>
 				
 <%-- 				<s:if test="commodityPosition.get(#pid).status == @model.CommodityStatus@IN_SHELF"> --%>
 <%-- 					<s:property value="commodityPosition.get(#pid).name"/> --%>
@@ -80,10 +93,6 @@
 </s:iterator>
 
 
-
-<button class="btn btn-primary" id="setButton"> Set </button>
-<button class="btn btn-primary" id="openResetButon"> Open Reset </button>
-<button class="btn btn-primary" id="closeResetButon"> Close Reset </button>
 </div>
 
 
@@ -95,43 +104,40 @@
 		for(var i = 0; i < allCell.length; ++ i)
 		{
 			cell = allCell[i];
-			$(cell).html('<input class="form-control" value='+  $(cell).attr("commodityId")  +' />');
-		}
-		
+			var input = $(cell).find("input");
+			if(i % 7 == 0 || i % 3 == 0)
+			{
+				$(input).css("background-color", "yellow");
+			}
+		}		
 	})
 
+	$(document).on("click", "#closeResetButon", function() {
+		allCell = $("[commodityId]");
+		for(var i = 0; i < allCell.length; ++ i)
+		{
+			cell = allCell[i];
+			var input = $(cell).find("input");
+			$(input).css("background-color", "");
+
+		}		
+	})
 
 	$(document).on("click", "#setButton", function() {
-
-
-// 		alert("IIII")
-		
-		
-		
 		allCell = $("[commodityId]");
-// 		alert(allCell.length)
 		var commodityIdArrayString="";
 		for(var i = 0; i < allCell.length; ++ i)
 		{
 			cell = allCell[i];
-			commodityId = $(cell).attr("commodityId");
-			console.log(commodityId);
 			var input = $(cell).find("input")
-			if($(cell).find("input"))
-			{ 
-				commodityId = $(cell).find("input").val();
-			}
-			console.log(commodityId + "--");
+			commodityId = $(input).val();
 			if(commodityIdArrayString != "") commodityIdArrayString += ","
 			commodityIdArrayString += commodityId;			
 			
 		}
-		alert(commodityIdArrayString);
 // 		alert(commodityIdArrayString);
 		
 
-		
-		
 		$.ajax({  
 	        url:'/admin/repairRecord_set' ,  
 	        type: "POST",  
@@ -143,36 +149,11 @@
 	        	
 	        	alert("Set Successfully")
 	        	window.location.reload();
-// 	        	alert(data.repairRecordTable)
-	        	
-
 	        }
 
 	   });  
 	}) 
 	
-	$(document).on("click", "#exportButton",function(){
-		
-		$.ajax({
-			url:'/admin/repairRecord_export',
-			type: "POST",
-			data: {
-				"selectDevice":$("#selectDevice").val(),
-	        	"inputRepairman":$("#inputRepairman").val(),
-	        	"selectTeachBuilding":$("#selectTeachBuilding").val(),
-	        	"inputClassroom":$("#inputClassroom").val(),
-	        	"inputBeginDate":$("#inputBeginDate").val(),
-	        	"inputEndDate":$("#inputEndDate").val(),
-			},
-			
-			success: function(data){
-				$("#repairRecordTableDiv").html(data.repairRecordTable);
-				window.open(data.exportPath);
-				
-			}
-			
-		});
-	})
 
 </script>
 

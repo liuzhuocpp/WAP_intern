@@ -29,9 +29,9 @@
 				  <param name="ignoreHierarchy">false</param>
 			</result>            
         </global-results>
-        <action name="undefinedUrl">
-        	<result> /jsp/homepage/undefinedUrl.jsp</result>
-        </action>        
+<!--         <action name="undefinedUrl"> -->
+<!--         	<result> /jsp/homepage/undefinedUrl.jsp</result> -->
+<!--         </action>         -->
     </package>
     
       

@@ -14,7 +14,7 @@
         <meta charset="utf-8"/>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="renderer" content="webkit"/>
-        <title>多媒体管理系统</title>
+        <title>Supermarket management information</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="keywords" content="" />
         <meta name="author" content="" />
@@ -49,10 +49,6 @@
 			
 			</layout:block>
     	</div>
-		<footer class="container" style="text-align:center">
-		  <p>Copyright © 1986 - 2016 All rights reserved | <a href="http://chuangxin.dlut.edu.cn">大连理工大学创新实验学院版权所有</a> | GPLv3 <a href="http://gplv3.fsf.org/">Terms</a></p>
-		</footer>
-	
 
         <script type='text/javascript' src="/bootstrap/js/bootstrap.min.js"></script>
 

@@ -17,11 +17,7 @@
  	<div class="col-md-5"  >  	
        <ul class="nav navbar-right">
            <li id="welcome_word">            	
-	           	欢迎您: 
-	           	<span id="login_user_name">
-	           		<s:property value="#session.fullName"/>
-	           	</span>
-	           	     (您是管理员)		           	
+	           	Welcome	to Manager          	
            </li>
        </ul>
 	</div>

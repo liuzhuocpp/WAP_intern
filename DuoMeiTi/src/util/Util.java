@@ -19,6 +19,18 @@ public class Util
 		
 	}
 	
+ 	public static String getRegion(int regionId)
+ 	{
+ 		final String[] array = {
+ 				"Daily necessities area",
+ 				"Beverage area",
+ 				"Wine area",
+ 				"Food area", 				
+ 		};
+
+ 		return array[regionId];
+ 	}
+ 	
 	
 	
 	public static final String RootPath;
@@ -31,10 +43,7 @@ public class Util
 	static 
 	{	
 		ServletContext application = ServletActionContext.getServletContext();
-		RootPath = application.getRealPath("");		
-		
-
-
+		RootPath = application.getRealPath("");
 	}
 
 			
