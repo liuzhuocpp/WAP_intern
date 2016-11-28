@@ -45,24 +45,20 @@
 	       
        <!--head content-->
        <div class="masthead">
-	         <!--Head title-->
-<!-- 	         <a href="/"> -->
-<!-- 	         	<img id="headerpic"   src="/img/head_pic.jpg" style="width:100%;height:230px;"> -->
-<!-- 				</img> -->
-<!-- 	         </a> -->
+
 			        
 			   <div class="container">
 			     <nav class="navbar navbar-default" role="navigation">
 			       <div class="collapse navbar-collapse">
 			         <ul class="nav navbar-nav">
-			           <li class=""><a href="/">首页</a></li>
+			           <li class=""><a href="/">Homepage</a></li>
 
 
 			           <li class="">
-			           		<a href="/login">登录</a>
+			           		<a href="/login">Login</a>
 					   </li>
    			           <li class="">
-			           		<a href="/login">注册</a>
+			           		<a href="/login">Register</a>
 					   </li>
 			           
 			           
@@ -86,49 +82,16 @@
 				</layout:block>
    </div>
    
-<!--  <div id="footer-links"> -->
-<!--      useful links -->
-<!-- 		<br> -->
-<!-- 		<p class="item-title-white">友情链接</p> -->
-<!-- 		<hr class="head-hr"> -->
-<!-- 		<div class="row-fluid" id="home-linker"> -->
-<!-- 		  <div class="col-lg-3"> -->
-<!-- 		    <a href="http://www.dlut.edu.cn/">大连理工大学</a> -->
-<!-- 		  </div> -->
-<!-- 		</div> -->
-
-<!-- 	</div> -->
-   
-   
-
+ 
     
-    
-    <!-- FOOTER -->
-<footer class="container">
-<!--   <p>Copyright © 1986 - 2016 All rights reserved | | GPLv3 <a href="http://gplv3.fsf.org/">Terms</a></p> -->
-</footer>
-
-<!--End FOOTER-->
-
-
-    
-    
-   
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <!-- <script type="text/javascript" src="/new_homepage/bootstrap/assets/js/bootstrap.min.js"></script> -->
 <script type='text/javascript' src="/bootstrap/js/bootstrap.min.js"></script>
-
-<!--TinyMCE Editor-->
-<!-- <script type="text/javascript" src="/new_homepage/tiny_mce/tiny_mce.js"></script> -->
 <script type='text/javascript' src="/js/base/tiny_mce.js"></script>
 <!-- JQuery Masonry-->
 <script type='text/javascript' src="/js/base/jquery.masonry.min.js"></script>
-
-<!-- JQuery Masonry-->
-<!-- <script type="text/javascript" src="/new_homepage/masonry/jquery.masonry.min.js"></script> -->
-
     
 <script type="text/javascript" src="/new_homepage/js/features.js"></script>
    
