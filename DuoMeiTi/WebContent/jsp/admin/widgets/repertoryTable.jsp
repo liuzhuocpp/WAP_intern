@@ -14,9 +14,9 @@
 		<s:iterator value="commodity_list" var="i" status="index">
 			<tr class="warning" rt_id="<s:property value="#i.id"/>">
 				<td  > <s:property value="#i.id"/> </td>
-				<td  > <s:property value="#i.name"/> </td>
-				
 				<td  > <s:property value="#i.type"/> </td>
+				
+				<td  > <s:property value="#i.name"/> </td>
 				<td  > <s:property value="#i.purchasePrice"/> </td>
 							
 				<td  > <s:property value="#i.purchasePriceUnit"/> </td>

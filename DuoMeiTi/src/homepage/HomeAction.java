@@ -1,37 +1,12 @@
 package homepage;
 
-import java.io.File;
-import java.io.PrintWriter;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+ import java.util.ArrayList;
+ import java.util.List;
+ import com.opensymphony.xwork2.ActionSupport;
 
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+ 
 
-import org.apache.struts2.ServletActionContext;
-import org.hibernate.Criteria;
-import org.hibernate.Query;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-import org.hibernate.criterion.DetachedCriteria;
-import org.hibernate.criterion.Order;
-import org.hibernate.criterion.Projections;
-import org.hibernate.criterion.Restrictions;
-
-import com.opensymphony.xwork2.ActionContext;
-import com.opensymphony.xwork2.ActionSupport;
-
-import util.PageGetBaseAction;
-
-
-public class HomeAction extends PageGetBaseAction
+public class HomeAction extends ActionSupport
 {
 	public List check_list = new ArrayList();
 	public List notice_list = new ArrayList();

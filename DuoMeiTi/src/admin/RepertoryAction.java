@@ -84,38 +84,7 @@ public class RepertoryAction extends util.FileUploadBaseAction{
 		return new java.sql.Timestamp(d.getTime() + day * 24*60 *60*1000);
 	}
 
-	// 按照成员字段构建一个Repertory 对象
-//	Commodity makeRepertory()
-//	{
-//		Commodity r = new Commodity();
-//		r.rtId = rtId;
-//		r.rtType = rtType;
-//		r.rtNumber = rtNumber;
-//		r.rtVersion = rtVersion;
-//		r.rtFactorynum = rtFactorynum;
-//
-//		
-//		if(rtProdDate != null)
-//		r.rtProdDate = new java.sql.Timestamp(rtProdDate.getTime());
-//		
-//		if(rtApprDate != null)
-//		r.rtApprDate = new java.sql.Timestamp(rtApprDate.getTime());
-//		
-//		
-//		r.rtReplacePeriod = rtReplacePeriod;		
-//		r.rtDeadlineDate = addDays(new java.util.Date() , rtReplacePeriod);
-//		
-//		r.rtFilterCleanPeriod = rtFilterCleanPeriod;		
-//		r.rtFreqPoint = rtFreqPoint;
-//
-//
-//		// 新的设备状态一定不会是 ‘教室’状态，所以设置rtClassroom字段为null
-//		r.rtDeviceStatus = rtDeviceStatus;
-//		r.rtClassroom = null;
-//		return r;
-//	}
-	
-
+ 
 	
 	
 	
