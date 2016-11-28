@@ -15,7 +15,7 @@
 
  		<action name="position" class="admin.CommodityPositionManagementAction">
 			<result>
-				/jsp/admin/repairRecord.jsp
+				/jsp/admin/commodityPosition.jsp
 			</result>			
 		</action>
 		
@@ -27,7 +27,7 @@
 		
  		<action name="commodity" class="admin.CommodityManagementAction">
 			<result name="success">
-				/jsp/admin/repertory.jsp
+				/jsp/admin/commodity.jsp
 			</result>
 		</action>
 		

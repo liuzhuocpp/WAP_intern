@@ -15,19 +15,19 @@
 <button class="btn btn-primary" id="openResetButon"> Open Recommend </button>
 <button class="btn btn-primary" id="closeResetButon"> Close Recommend </button>
 
-<s:iterator   var="i" begin="0" end="1">
+<s:iterator   var="regionRow" begin="0" end="1">
 	
 	<table class="table table-bordered table-hover" id="repairRecordTable">
 	<tr class="active">
-		<s:iterator  var="region" begin="0" end="1">
+		<s:iterator  var="regionColumn" begin="0" end="1">
 			<th>
-				<s:property value="@util.Util@getRegion(#i * 2 + #region)"/>
+				<s:property value="@util.Util@getRegion(#regionRow * 2 + #regionColumn)"/>
 			</th>
 		</s:iterator>
 	</tr>
 	
 	<tr class="warning"  >
-		<s:iterator  var="region" begin="0" end="1">
+		<s:iterator  var="regionColumn" begin="0" end="1">
 			<td > 
 					<s:iterator var="shelf" begin="0" end="1">
 						<table class="table table-bordered table-hover" >
@@ -41,7 +41,7 @@
 										
 										
 										
-					<s:set name="pid" value="@util.Util@calculatePostionId(#i, #region, #shelf, #row, #col)" />
+					<s:set name="pid" value="@util.Util@calculatePostionId(#regionRow, #regionColumn, #shelf, #row, #col)" />
 										
 										
 					<td commodityId='<s:property value="commodityPosition.get(#pid).id"/>' 
