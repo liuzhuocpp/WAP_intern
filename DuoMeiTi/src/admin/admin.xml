@@ -13,13 +13,13 @@
 		</action>
 
 
- 		<action name="commodityPosition" class="admin.CommodityPositionManagementAction">
+ 		<action name="position" class="admin.CommodityPositionManagementAction">
 			<result>
 				/jsp/admin/repairRecord.jsp
 			</result>			
 		</action>
 		
-		<action name="commodityPosition_*" class="admin.CommodityPositionManagementAction" method="{1}">
+		<action name="position_*" class="admin.CommodityPositionManagementAction" method="{1}">
 			
 			<result name="success" type="json">
 			</result>			

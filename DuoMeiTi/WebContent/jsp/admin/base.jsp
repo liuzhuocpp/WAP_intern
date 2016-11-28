@@ -7,7 +7,7 @@
 	<div class="menu-list">
 <!-- 	    <a href="/admin/classroom/" class="menu-button-middle"><span class="glyphicon glyphicon-blackboard">&nbsp;教室管理</span></a> -->
 	    <a href="/admin/commodity" class="menu-button-middle"><span class="glyphicon glyphicon-th-large">&nbsp;Commodity Management</span></a>
-	    <a href="/admin/commodityPosition" class="menu-button-middle"><span class="glyphicon glyphicon-th">&nbsp;Commodity Position Set</span></a>
+	    <a href="/admin/position" class="menu-button-middle"><span class="glyphicon glyphicon-th">&nbsp;Commodity Position Set</span></a>
 	    
 <!-- 	    <a href="/admin/checkinManage" class="menu-button-middle"><span class="glyphicon glyphicon-list-alt">&nbsp;</span></a> -->
 	    

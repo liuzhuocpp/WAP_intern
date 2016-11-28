@@ -125,7 +125,7 @@
 			
 		}
 		$.ajax({  
-	        url:'/admin/commodityPosition_set' ,  
+	        url:'/admin/position_set' ,  
 	        type: "POST",  
 	        data: {
 	        	"commodityIdArrayString":commodityIdArrayString,
