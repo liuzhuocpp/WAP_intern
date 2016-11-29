@@ -5,10 +5,21 @@
 	<div class="mycontent">
 
 		<div>
-			<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#rtModal" id="rtInsert" name="rtInsert">Add Commodity Information </button>
-			<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#rtModalImport" id="rtImport" name="rtImport">Import Commodity Information</button>
-			<button class="btn btn-primary btn-lg"  id="rtExportExcel" name="rtExportExcel">Export Commodity Information</button>
+			<button class="btn btn-primary  " data-toggle="modal" data-target="#rtModal" id="rtInsert" name="rtInsert">
+				Add Commodity Information 
+			</button>
+			<button class="btn btn-primary  " data-toggle="modal" data-target="#rtModalImport" id="rtImport" name="rtImport">
+				Import Commodity Information
+			</button>
+			
+			<button class="btn btn-primary  "  
+				id="rtExportExcel" name="rtExportExcel">Export Commodity Information
+			</button>
+			<button class="btn btn-primary ">
+				Set Selling Price
+			</button>
 		</div>
+		<br/>
 		
 		
 		<div class="modal fade" id="rtModalImport">

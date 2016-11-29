@@ -18,7 +18,11 @@ public class CommodityManagementAction extends util.FileUploadBaseAction{
 	static 
 	{
 		commodityData = new ArrayList<Commodity>();
-		commodityData.add(new Commodity(1, "Wipes", "Huggies Natural Care Plus Wipes",24.99	,"USD") );
+		commodityData.add(new Commodity(1, "Wine", "Beer",24.99	,"USD") );
+		commodityData.add(new Commodity(2, "Food", "hamburger",4.99	,"USD") );
+		commodityData.add(new Commodity(3, "Drink", "Water",8.99	,"USD") );
+		commodityData.add(new Commodity(4, "Fruit", "Orange",8.99	,"USD") );
+		commodityData.add(new Commodity(5, "Fruit", "Banana",8.99	,"USD") );
 	}
 	
 	
