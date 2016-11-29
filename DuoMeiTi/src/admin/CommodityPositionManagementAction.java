@@ -16,7 +16,7 @@ public class CommodityPositionManagementAction extends ActionSupport {
 	private static List<Commodity> commodityData = new ArrayList<Commodity>();
 	static
 	{
-		for(int i = 0; i < 64; ++ i)
+		for(int i = 0; i < 200; ++ i)
 		{
 			String name = "Ice cream";
 			if(i % 3 == 0)
@@ -33,7 +33,7 @@ public class CommodityPositionManagementAction extends ActionSupport {
 			
 			Commodity c = new Commodity(i, "Wipes", name,24.99	,"USD");
 			
-			if(i % 7 == 0)
+			if(i % 7 == 0  && i < 64)
 			{
 				c.setPositionId(i);
 				c.setStatus(CommodityStatus.IN_SHELF);
@@ -67,7 +67,10 @@ public class CommodityPositionManagementAction extends ActionSupport {
 		{
 			if(c.getStatus() == CommodityStatus.IN_SHELF) continue;
 			for(;cpId < TOTAL_POSITION && commodityPosition.get(cpId) != null; cpId++);
-
+			if(cpId == TOTAL_POSITION)
+			{
+				break;
+			}
 			commodityPosition.set(cpId, c);
 			cpId++;
 			
