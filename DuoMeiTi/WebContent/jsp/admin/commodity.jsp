@@ -43,24 +43,6 @@
 		<!-- /.modal -->
 		
 		
-		
-		
-		
-		
- 		
- 
-
-
-
-
-
-
-		
-		
-		
-		
-		
-
 		<div id="repertoryTableDiv">
 			<%@ include file="/jsp/admin/widgets/repertoryTable.jsp" %>
 		</div>

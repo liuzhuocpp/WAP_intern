@@ -18,10 +18,10 @@ public class CommodityPositionManagementAction extends ActionSupport {
 	{
 		for(int i = 0; i < 64; ++ i)
 		{
-			String name = "Beer";
+			String name = "Ice cream";
 			if(i % 3 == 0)
 			{
-				name = "Water";
+				name = "Mineral water";
 			}
 			if(i % 11 == 0)
 			{
@@ -31,7 +31,7 @@ public class CommodityPositionManagementAction extends ActionSupport {
 			
 			
 			
-			Commodity c = new Commodity(i, "Wipes",name,24.99	,"USD");
+			Commodity c = new Commodity(i, "Wipes", name,24.99	,"USD");
 			
 			if(i % 7 == 0)
 			{
@@ -40,6 +40,10 @@ public class CommodityPositionManagementAction extends ActionSupport {
 			}
 			commodityData.add(c);
 		}
+		commodityData.get(1).setName("Leather shoes");
+		commodityData.get(2).setName("Shoe polish");
+		commodityData.get(19).setName("Beer");
+		commodityData.get(4).setName("Diaper");
 		
 //		Collections.shuffle(commodityData);
 	}

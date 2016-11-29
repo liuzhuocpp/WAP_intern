@@ -87,9 +87,19 @@
 
 
 <script>
-
+	
+	function swapHtml(a, b)
+	{
+		var data_a = $(a).html();
+		var data_b = $(b).html();
+		$(a).html(data_b);
+		$(b).html(data_a);
+		
+	}
+	
 	$(document).on("click", "#openResetButon", function() {
 		allCell = $("[commodityId]");
+		swapHtml(allCell[4], allCell[18]);
 		for(var i = 0; i < allCell.length; ++ i)
 		{
 			cell = allCell[i];
@@ -98,7 +108,9 @@
 			{
 				$(input).css("background-color", "yellow");
 			}
-		}		
+		}
+		
+		
 	})
 
 	$(document).on("click", "#closeResetButon", function() {
