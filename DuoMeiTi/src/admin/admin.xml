@@ -36,6 +36,54 @@
 			</result>
 		</action>
 		 
+		 
+		 
+		 
+		 
+ 		<action name="salesTrends"  >
+			<result name="success" >
+				/jsp/admin/salesTrends.jsp
+			</result>
+		</action>
+  		<action name="purchaseRecord"  >
+			<result name="success" >
+				/jsp/admin/purchaseRecord.jsp
+			</result>
+		</action>
+  		<action name="supplierManagement"  >
+			<result name="success" >
+				/jsp/admin/supplierManagement.jsp
+			</result>
+		</action>
+  		<action name="supermarketManagement"  >
+			<result name="success" >
+				/jsp/admin/supermarketManagement.jsp
+			</result>
+		</action>
+		
+  		<action name="employeeManagement" >
+			<result name="success" >
+				/jsp/admin/employeeManagement.jsp
+			</result>
+		</action>
+		
+  		<action name="customerManagement" >
+			<result name="success" >
+				/jsp/admin/customerManagement.jsp
+			</result>
+		</action>
+  		<action name="modifypassword" >
+			<result name="success" >
+				/jsp/admin/modifypassword.jsp
+			</result>
+		</action>
+  		<action name="user_information" >
+			<result name="success" >
+				/jsp/admin/user_information.jsp
+			</result>
+		</action>
+		
+		 
  		
 	</package>
 	

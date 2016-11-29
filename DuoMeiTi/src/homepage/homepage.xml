@@ -11,6 +11,10 @@
         <action name="login">
         	<result> /jsp/homepage/login.jsp </result>            
         </action>
+        <action name="logout">
+        	<result type="redirect"> / </result>            
+        </action>
+        
 
 </package>
 
