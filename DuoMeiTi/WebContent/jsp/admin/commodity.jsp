@@ -20,6 +20,32 @@
 			</button>
 		</div>
 		<br/>
+		<div>
+			
+			
+				<form class="form-inline" role="form">
+   				  <div class="form-group">
+				    <div class="input-group">
+				      <div class="input-group-addon">Type</div>
+				      <input class="form-control" type="text" placeholder="Type">
+				    </div>
+				  </div>
+				  
+				  <div class="form-group">
+				    <div class="input-group">
+				      <div class="input-group-addon">Name</div>
+				      <input class="form-control" type="text" placeholder="Name">
+				    </div>
+				  </div>
+				  
+				  <button class="btn btn-primary" type="button">
+					 Search
+				  </button>
+				</form>
+			
+			
+		</div>
+		
 		
 		
 		<div class="modal fade" id="rtModalImport">
