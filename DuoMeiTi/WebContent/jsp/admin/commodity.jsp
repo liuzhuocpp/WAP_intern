@@ -15,7 +15,7 @@
 			<button class="btn btn-primary  "  
 				id="rtExportExcel" name="rtExportExcel">Export Commodity Information
 			</button>
-			<button class="btn btn-primary ">
+			<button class="btn btn-primary" id="setSellingPrice">
 				Set Selling Price
 			</button>
 		</div>
@@ -78,12 +78,24 @@
 			});
 			
 		})
-
 		function importCallback(data) {
 			
-			window.location.reload();
-			
+			window.location.reload();			
 		}
+		$(document).on("click","#setSellingPrice",function() {
+			
+			allInput = $("input");
+			for(var i = 0; i <allInput.length; ++ i)
+			{
+				var cnt = allInput[i];
+				$(cnt).css("background-color", "")
+			}
+			alert("Set Success");
+			
+				
+		})
+
+		
 
 		</script>
 		

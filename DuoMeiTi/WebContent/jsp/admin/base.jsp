@@ -8,7 +8,7 @@
 <!-- 	    <a href="/admin/classroom/" class="menu-button-middle"><span class="glyphicon glyphicon-blackboard">&nbsp;教室管理</span></a> -->
 	    <a href="/admin/commodity" class="menu-button-middle"><span class="glyphicon glyphicon-th-large">&nbsp;Commodity Management</span></a>
 	    <a href="/admin/position" class="menu-button-middle"><span class="glyphicon glyphicon-th">&nbsp;Commodity Position Set</span></a>
-	    <a href="/admin/abc" class="menu-button-middle"><span class="glyphicon glyphicon-th">&nbsp;Commodity Sales Rrends</span></a>
+	    <a href="/admin/abc" class="menu-button-middle"><span class="glyphicon glyphicon-th">&nbsp;Commodity Sales Trends</span></a>
 	    <a href="/admin/ddd" class="menu-button-middle"><span class="glyphicon glyphicon-th">&nbsp;Purchase Record</span></a>
 	    <a href="/admin/fda" class="menu-button-middle"><span class="glyphicon glyphicon-th">&nbsp;Supplier Management</span></a>
 		
