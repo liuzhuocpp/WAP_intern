@@ -22,10 +22,10 @@ public class Util
  	public static String getRegion(int regionId)
  	{
  		final String[] array = {
- 				"Daily necessities area",
- 				"Beverage area",
- 				"Wine area",
- 				"Food area", 				
+ 				"Daily necessities region",
+ 				"Wine region",
+ 				"Drink region", 				
+ 				"Food region",
  		};
 
  		return array[regionId];

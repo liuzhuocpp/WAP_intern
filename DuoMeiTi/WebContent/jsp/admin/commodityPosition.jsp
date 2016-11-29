@@ -144,9 +144,17 @@
 	        },  
 	          
 	        success: function(data) {
+	        	if(data.status=="")
+	        	{
+	        		alert("Set Successfully")
+		        	window.location.reload();
+	        	}
+	        	else
+        		{
+	        		alert(data.status);
+        		}
 	        	
-	        	alert("Set Successfully")
-	        	window.location.reload();
+	        	
 	        }
 
 	   });  
